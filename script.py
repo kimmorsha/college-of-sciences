@@ -2,22 +2,17 @@ sheets = {}
 departments = {}
 faculty = {}
 training = {}
-research = {}
+research = {} 	
 newsFormat = {}
 
 # generic function
 def read_sheet(url):
-	return read_faculty, read_all_faculty_url
+	return 
 
 def read_all_faculty_urls():
 	return {
-		"departments": []
-		"faculties": [],
-	}
-
-def read_faculty_by_department():
-	return {
-
+		"departments": string,
+		"faculties": [] # array of string urls
 	}
 
 def read_faculty(url):
@@ -26,8 +21,8 @@ def read_faculty(url):
 		"introduction": "",
 		"photo-link": "",
 		"position": "",
-		"research": [],
-		"training": [],
+		"research": [], # read_research function
+		"training": [], # read_training function
 	}
 
 def read_training():
