@@ -15,6 +15,12 @@ def read_all_faculty_urls():
 		"faculties": [] # array of string urls
 	}
 
+def read_faculty_by_department():
+	return {
+		"departments": string,
+		"faculties": [] # array of JSON faculties from read_faculty()
+	}
+
 def read_faculty(url):
 	return {
 		"name": "",
