@@ -1,24 +1,24 @@
 sheets = {}
-departments = {}
+departmentsFaculty = {}
 faculty = {}
 training = {}
 research = {} 	
-newsFormat = {}
+news = {}
 
 # generic function
 def read_sheet(url):
-	return 
+	return {}
 
 def read_all_faculty_urls():
 	return {
 		"departments": string,
-		"faculties": [] # array of string urls
+		"faculty-urls": [] # array of string urls
 	}
 
 def read_faculty_by_department():
 	return {
 		"departments": string,
-		"faculties": [] # array of JSON faculties from read_faculty()
+		"faculty-members": [] # array of JSON faculties from read_faculty()
 	}
 
 def read_faculty(url):
@@ -61,3 +61,5 @@ training = read_training()
 research = read_research()
 news = read_news()
 faculty = read_faculty(url)
+departmentsFaculty = read_faculty_by_department()
+
