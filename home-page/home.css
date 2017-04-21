@@ -1,0 +1,125 @@
+html {
+	font-family: Arial;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+	.header > * {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 90px;
+		text-align: center;
+	}
+		.header-bar {
+			background-color: #eef;
+		}
+		.header-menu {
+			font-size: 10px;
+		}
+		.header-bar > * {
+			flex: 1;
+		}
+		.header-menu > * {
+			flex: 1;	
+		}
+
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+.container {
+	z-index: 2;
+	width: 1150px;
+	padding: 0 50px;
+	max-height: 300px;
+	background-color: #EAE8DC;
+}
+	.container-header {
+		height: 400px;
+		display: flex;
+		align-items: center;
+	}
+		.container-header > h3 {
+			margin-left: 50px;
+			font-size: 40px;
+		}
+	.container-inner {
+		display: flex;
+		background-color: white;
+		padding-top: 50px;
+	}
+		.container-inner > ul {
+			flex: 2;
+			background-color: #eee;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+			.container-inner > ul > li {
+				margin: 0;
+				padding: 10px 0;
+				background-color: white;
+				display: flex;
+				align-items: center;
+			}
+			.container-inner > ul > li > img {
+				/*border: 1px solid black;*/
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				margin-left: 20px;
+			}
+			.container-inner > ul > li > .info {
+				padding-left: 20px;
+			}
+				.container-inner > ul > li > .info > p {
+					padding-left: 20px;
+				}
+		.container-inner > .search {
+			flex: 1;
+			background-color: transparent;
+			height: 200px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: -20px;
+		}
+			.container-inner > .search > .search-container {
+				background-color: rgba(50,50,70,0.8);
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+.plchdr {
+	z-index: 1;
+	background-color: #eef;
+	width: 1250px;
+	height: 1000px;
+}
