@@ -71,6 +71,12 @@ input[type=text]:focus {
 		background-color: white;
 		padding-top: 50px;
 	}
+		.container-inner > h3 {
+			margin-left: 50px;
+			font-size: 20px;
+			padding: 10px 0;
+		}
+
 		.container-inner > ul {
 			flex: 2;
 			background-color: #eee;
